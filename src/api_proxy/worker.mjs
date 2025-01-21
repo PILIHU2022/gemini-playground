@@ -155,7 +155,7 @@ async function handleCompletions(req, apiKey) {
   }
    if (req.model == "gemini-2.0-flash-exp-search") {
      model = "gemini-2.0-flash-exp",
-		 req.model = model,
+     req.model = model,
      req.tools = [{"google_search":{}}]
    }
   const TASK = req.stream ? "streamGenerateContent" : "generateContent";
